@@ -21,6 +21,13 @@ img.center-images {
 
 /* section control */
 
+#table-of-content {
+  float: none;
+  text-align:left;
+
+
+}
+
 #all {
 
   float: none;
