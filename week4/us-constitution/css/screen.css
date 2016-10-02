@@ -11,7 +11,7 @@ body {
 img.center-images {
   float: none;
   height: 225px;
-  width: 900px;
+  width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@ img.center-images {
 
 #right_content {
     float: right;
-    width: 550px;
+    width: 570px;
     padding: 0px 10px 20px 20px;
     line-height: 35px;
     font-size: 18px;
@@ -48,7 +48,6 @@ img.center-images {
   font-family:fantasy;
   font-size: 24px;
   font-style: italic;
-
 }
 
 #section-num {
@@ -59,5 +58,12 @@ img.center-images {
 
 #article-style {
   font-size: 18px;
+}
+#bill-of-rights {
+  margin-top: 100px;
+  float: left;
+  font-size: 18px;
+  padding: 0px 10px 20px 10px;
+  line-height: 35px;
 }
 /* --- */
