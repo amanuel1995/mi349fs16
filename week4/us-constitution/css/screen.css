@@ -6,6 +6,32 @@ body {
   background: #ccc;
 }
 
+/* Table of content in 3 columns */
+
+#column-left {
+    width: 33%;
+    left: 0;
+    line-height: 35px;
+    white-space: nowrap;
+    position: absolute;
+    margin-bottom: 100px;
+
+}
+#column-center {
+    width: 34%;
+    margin-left: 33%;
+    margin-bottom: 50px;
+    line-height: 35px;
+    white-space: nowrap;
+    position: absolute;
+}
+#column-right {
+    width: 33%;
+    right: 0;
+    line-height: 35px;
+    white-space: nowrap;
+    position: absolute;
+}
 /* center images */
 
 img.center-images {
@@ -21,13 +47,6 @@ img.center-images {
 
 /* section control */
 
-#table-of-content {
-  float: none;
-  text-align:left;
-
-
-}
-
 #all {
 
   float: none;
@@ -38,7 +57,7 @@ img.center-images {
 #left_content {
     float: left;
     width: 570px;
-    margin-top:-20px;
+    margin-top:450px;
     padding: 0px 20px 10px 20px;
     line-height: 35px;
     font-size: 18px;
@@ -46,6 +65,7 @@ img.center-images {
 
 #right_content {
     float: right;
+    margin-top: 450px;
     width: 570px;
     padding: 0px 10px 20px 20px;
     line-height: 35px;
