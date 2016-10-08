@@ -1,0 +1,55 @@
+/* Class ID selector for both pages */
+.navstyle {
+  color: #eee8aa;
+}
+
+.head-style {
+  align-items: center;
+  font-style: oblique;
+}
+
+.image-ctrl {
+  margin-top: 40px;
+  width: 640px;
+  height:360px;
+}
+
+.article-style {
+  font-family: serif;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+}
+
+.foot1 {
+  font-family: cursive;
+  float: left;
+}
+
+
+/* ID Selectors that specifically apply to a section */
+
+#ocean {
+  background: #87cefa;
+}
+
+#mint-green {
+  background: rgb(50, 205, 50);
+}
+
+#iframe {
+  float: right;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+}
+
+#left_content {
+  width: 65%;
+  float: left;
+}
+
+#right_content {
+  width: 33%;
+  float: right;
+}
