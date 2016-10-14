@@ -1,5 +1,5 @@
 /* Add your CSS below */
-/* Example: adding a background color to the HTML body */
+
 body {
   background: #bdc3c7;
   font-family: Helvetica, sans-serif;
@@ -12,10 +12,22 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0,0,0,0.2);
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 1em;
   text-align: center;
-  width: 300px;
+  width: 30%;
+}
+
+#card2 {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  margin: 10px ;
+  margin-top: 50px;
+  padding: 1em;
+  float: right;
+  text-align: center;
+  width: 32%;
 }
 
 .card--avatar {
