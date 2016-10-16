@@ -1,7 +1,7 @@
 /* Add your CSS below */
 
 body {
-  background: #bdc3c7;
+  background: linear-gradient(100deg, green, yellow 75%, red);
   font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,37 +9,26 @@ body {
 
 .card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.2);
-  margin: 0 auto;     /* *******/
+  border-radius: 15px;
+  box-shadow: 0 0 450px rgba(0,0,0,0.2);
+  margin: 0 auto;
   margin-top: 50px;
   padding: 1em;
   text-align: center;
-  width: 30%;
-}
-
-#card2 {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.2);
-  margin: 10px ;
-  margin-top: 50px;
-  padding: 1em;
-  float: right;
-  text-align: center;
-  width: 32%;
+  width: 500px;
+  margin-bottom: 35px;
 }
 
 .card--avatar {
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 -10px 20px rgba(0,0,0,0.2);
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 .card--header {
   color: #2c3e50;
-  font-size: 3.2em;
+  font-size: 2.5em;
   font-weight: 100;
   margin: 0;
 }
@@ -57,14 +46,36 @@ body {
 
 .card--social-links li {
   display: inline-block;
-  padding: 1em;
+  padding: 1.4em;
 }
 
 .card--social-links a {
-  color: #4aa3df;
+  color: #4aa5ca;
   font-size: 2em;
 }
 
 .card--social-links a:hover {
-  color: #9b59b6;
+  color: gray;
+}
+
+.sub-topic {
+  font-family: serif;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: left;
+  color: brown;
+}
+
+.regular-text{
+  text-align: left;
+  font-family: georgia;
+
+}
+
+.sub-topic2 {
+  font-family: serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  color: indigo;
 }
