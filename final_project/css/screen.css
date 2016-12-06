@@ -4,25 +4,15 @@
 body {
   /* #ccc is shorthand HEX for a light grey */
   background: #ccc;
+  margin: 0;
+  padding: 0;
 }
 /* fonts import */
 @import url('https://fonts.googleapis.com/css?family=Acme|Aref+Ruqaa|Dancing+Script|Indie+Flower|Josefin+Sans|Pacifico|Quattrocento+Sans|Shadows+Into+Light');
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
-
-ul {
- list-style: none; /* remove bullets */
-}
-
-.menu ul,
-.menu li,
-.menu a {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
+/*naviagation bar styling*/
 
 .menu {
   margin: 0;
@@ -34,6 +24,19 @@ ul {
 
   background: #4c4e5a;
   border-radius: 5px;
+}
+
+.menu ul,
+.menu li,
+.menu a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+ul {
+ list-style: none; /* remove bullets */
 }
 
 .menu li {
@@ -54,7 +57,7 @@ ul {
   border-left: 1px solid #393942;
   border-right: 1px solid #4f5058;
 
-  font-family: Georgia, sans-serif;
+  font-family: 'Areef Ruqaa', sans-serif;
   font-weight: bold;
   font-size: 13px;
 
@@ -82,6 +85,7 @@ ul {
     opacity: 0;
     background: #1f2024;
     border-radius: 0 0 5px 5px;
+    overflow: hidden;
 }
 
 .menu li:hover > ul {
@@ -181,15 +185,6 @@ ul {
   text-align: center;
 }
 
-/*font-family: 'Aref Ruqaa', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Acme', sans-serif;
-font-family: 'Quattrocento Sans', sans-serif;*/
-
 #quote {
   margin-top: 10px;
   font-size: 16px;
@@ -209,9 +204,7 @@ font-family: 'Quattrocento Sans', sans-serif;*/
   margin-left: 650px;
   margin-bottom:15px;
 }
-.slide-show-images {
-  margin-left: 10px;
-}
+
 
 /*footer syle*/
 #footer-last {
@@ -241,8 +234,225 @@ font-family: 'Quattrocento Sans', sans-serif;*/
   margin-top: 15px;
 }
 
+/*Responsive nav site styling */
+.logo-bar {
+  float: left;
+  display: none;
+}
+.handle {
+  float: right;
+  color: #000;
+  border: none;
+  font-size: 25px;
+  padding:  5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+.logo-resp{
+  padding: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  float: left;
+  display: none;
+}
+.image-res{
+  padding: 0px;
+  background-color: #000;
+  color: #fff;
+  float: left;
+  height: 45px;
+  /*display: none;*/
 
-/*MEDIA QUERY*/
-@media only screen and (max-width : 640px) {
+}
+
+ /*Media query for generic tablet*/
+@media screen and (max-width: 600px) {
+  nav{
+    overflow: hidden;
+  }
+  nav ul {
+    max-height: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  nav ul li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+  .nav ul.show{
+    max-height: 300px; //Jquery element styling
+  }
+
+  .logo{
+    width: 100%;
+    height: 45px;
+    background: #4c4e5a;
+  }
+  .logo-resp{
+    float: none;
+  }
+  .handle{
+    display: block;
+    background-color: #4c4e5a;
+    border-radius: 0px;
+    height: 45px;
+  }
+  .call-to-action-1 {
+    font-size: 18px;
+    color: green;
+    font-family: 'Dancing Script', cursive;
+  }
+  .shop-button{
+    display:block;
+    margin:auto;
+    margin-left: 165px;
+    margin-bottom: 10px;
+  }
+  #quote {
+    font-size: 18px;
+  }
+
+/*hide featured image*/
+  .featured-img{
+    width: 55%;
+    margin-bottom: 150px;
+  }
+  .card{
+    display: none;
+  }
+
+  .donate-img {
+
+    width: 60%;
+    margin-bottom: 125px;
+  }
+  #donate-img{
+    width: 500px;
+    display: block;
+    margin: auto;
+  }
+
+
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+  .card{
+    display: none;
+  }
+  .donate-img {
+
+    width: 60%;
+    margin-bottom: 125px;
+  }
+  #donate-img{
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+  nav{
+    overflow: hidden;
+  }
+  nav ul {
+    max-height: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  nav ul li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+  .nav ul.show{
+    max-height: 300px; //Jquery element styling
+  }
+
+  .logo{
+    width: 100%;
+    height: 45px;
+    background: #4c4e5a;
+  }
+  .logo-resp{
+    float: none;
+  }
+  .handle{
+    display: block;
+    background-color: #4c4e5a;
+    border-radius: 0px;
+    height: 45px;
+  }
+  .call-to-action-1 {
+    font-size: 18px;
+    color: green;
+    font-family: 'Dancing Script', cursive;
+  }
+  .shop-button{
+    display:block;
+    margin:auto;
+    margin-left: 165px;
+    margin-bottom: 10px;
+  }
+  #quote {
+    font-size: 18px;
+  }
+
+  .featured-img {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width:281px) {
+  nav{
+    overflow: hidden;
+  }
+  nav ul {
+    max-height: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  nav ul li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+  .nav ul.show{
+    max-height: 300px; //Jquery element styling
+  }
+
+  .logo{
+    width: 100%;
+    height: 45px;
+    background: #4c4e5a;
+  }
+  .logo-resp{
+    float: none;
+  }
+  .handle{
+    display: block;
+    background-color: #4c4e5a;
+    border-radius: 0px;
+    height: 45px;
+  }
+  .call-to-action-1 {
+    font-size: 18px;
+    color: green;
+    font-family: 'Dancing Script', cursive;
+  }
+  .shop-button{
+    display:block;
+    margin:auto;
+    margin-left: 85px;
+    margin-bottom: 10px;
+  }
+  #quote {
+    font-size: 15px;
+    font-style: italic;
+  }
 
 }

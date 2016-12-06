@@ -1,40 +1,7 @@
-// control for image slideshow -- credit: example obatined from jfiddle
-'use strict';
-
-$(function() {
-
-    //settings for slider
-    var width = 720;
-    var animationSpeed = 3000;
-    var pause = 1000;
-    var currentSlide = 1;
-
-    //cache DOM elements
-    var $slider = $('#slider');
-    var $slideContainer = $('.slides', $slider);
-    var $slides = $('.slide', $slider);
-
-    var interval;
-
-    function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                if (++currentSlide === $slides.length) {
-                    currentSlide = 1;
-                    $slideContainer.css('margin-left', 0);
-                }
-            });
-        }, pause);
-    }
-    function pauseSlider() {
-        clearInterval(interval);
-    }
-
-    $slideContainer
-        .on('mouseenter', pauseSlider)
-        .on('mouseleave', startSlider);
-
-    startSlider();
-
-
+// Javascript to toggle responsive menu list items
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $('.handle').on('click',function(){
+      $('nav ul').toggleClass('show');
+    });
 });
