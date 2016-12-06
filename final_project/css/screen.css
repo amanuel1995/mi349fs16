@@ -1,0 +1,248 @@
+/* Add your CSS below */
+
+/* background color to the HTML body */
+body {
+  /* #ccc is shorthand HEX for a light grey */
+  background: #ccc;
+}
+/* fonts import */
+@import url('https://fonts.googleapis.com/css?family=Acme|Aref+Ruqaa|Dancing+Script|Indie+Flower|Josefin+Sans|Pacifico|Quattrocento+Sans|Shadows+Into+Light');
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+
+ul {
+ list-style: none; /* remove bullets */
+}
+
+.menu ul,
+.menu li,
+.menu a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 100%;
+
+  background: #4c4e5a;
+  border-radius: 5px;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  height: 40px;
+}
+
+.menu li a {
+  display: block;
+  padding: 0 20px;
+  margin: 6px 0;
+  line-height: 32px;
+  text-decoration: none;
+
+  border-left: 1px solid #393942;
+  border-right: 1px solid #4f5058;
+
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+
+  color: #f3f3f3;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+  transition: color .2s ease-in-out;
+}
+
+
+.menu li:first-child a {
+  border-left: none;
+}
+.menu li:last-child a{
+  border-right: none;
+}
+
+.menu li:hover > a {
+  color: #8fde62;
+}
+
+.menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    background: #1f2024;
+    border-radius: 0 0 5px 5px;
+}
+
+.menu li:hover > ul {
+  opacity: 1;
+}
+
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+
+}
+
+.menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+
+.menu ul li a {
+    width: 100px;
+    padding: 4px 0 4px 40px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+
+.menu ul li:last-child a {
+  border: none;
+}
+/* featured image */
+
+.featured-img-container{
+  width: 100%;
+  display:block;
+  margin:auto;
+}
+.featured-img {
+  margin-top: 60px;
+  display:block;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/*centered images*/
+
+.donate-img {
+
+  width: 100%;
+  margin-bottom: 125px;
+}
+#donate-img{
+  width: 600px;
+  display: block;
+  margin: auto;
+}
+/*flexbox styling */
+.flex-content {
+    display: flex;
+}
+
+.flex-content section {
+    padding: 1em;
+    flex: 2 0 0;
+    line-height: 25px;
+}
+.flex-content section:first-of-type {
+    flex: 1 1 1;
+}
+
+.flex-content div:first-of-type {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 35%;
+}
+
+.image-flex img {
+  height: 10%;
+
+}
+
+/*css card styling */
+.card--avatar {
+  border-radius: 70%;
+  border: 3px solid #fff;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.2);
+}
+
+/*footer styling*/
+.contact-info {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+}
+
+#bigger-font-cursive {
+  font-size: 45px;
+  text-align: center;
+}
+
+/*font-family: 'Aref Ruqaa', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;*/
+
+#quote {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.call-to-action-1 {
+  font-size: 22px;
+  color: green;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.shop-button{
+  display:block;
+  margin:auto;
+  margin-left: 650px;
+  margin-bottom:15px;
+}
+.slide-show-images {
+  margin-left: 10px;
+}
+
+/*footer syle*/
+#footer-last {
+  background-color: #333;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  color: white;
+  margin-top: 15px;
+}
+#melkamsew {
+  height: 300px;
+  width: auto;
+}
+.cursive-text {
+  font-family:'Dancing Script', cursive;
+  font-size: 15px;
+}
+.normal-text {
+  font-family: 'Quattrocento Sans', sans-serif;  font-size: 15px;
+}
+.fine-print-medium {
+  font-family: 'Quattrocento Sans', sans-serif;  font-size: 15px;
+}
+
+.video-frame {
+  margin-top: 15px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+}
