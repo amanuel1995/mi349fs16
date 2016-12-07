@@ -6,7 +6,7 @@
         <title>Melkam Fashion</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href=".ico">
+        <link rel="shortcut icon" href="favicon.ico">
 
       <!-- bootstrap links and other external styling sheets and javascript -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -49,22 +49,30 @@
 
       <header>
 
-        <!-- Navigation Bar -->
-        <nav>
-          <ul class="menu" >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Dashboard</a>
+        <!-- Header Bar -->
+        <div class="logo">
+        <a href="#" class="logo-resp">Melkam Fashion</a>
+        <img src="images/logo.png" class="image-res" alt="">
+        <!-- the handle button for Responsive nav -->
+          <button type="button" class="handle"> <i class="fa fa-bars"></i></button>
 
-              <ul>
-                 <li><a href="sign-up.html" class="register">Register</a></li>
-                 <li><a href="sign-in.html" class="sign in">Log In</a></li>
-                 <li><a href="subscribe.html" class="subscribe">Subscribe</a></li>
+        </div>
+
+        <!-- naviagation bar -->
+        <nav class="nav">
+          <ul class="menu" >
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="sub-nav"><a href="dashboard.html">Dashboard</a>
+
+              <ul class="">
+                 <li class="sub-nav"><a href="registration.php" class="register">Register</a></li>
+                 <li class="sub-nav"><a href="login.php" class="sign in">Log In</a></li>
               </ul>
 
             </li>
-         <li><a href="shop.html">Shop</a></li>
-         <li><a href="campaigns.html">Get Involved</a></li>
-         <li><a href="about-me.html">About Us</a></li>
+         <li class="menu-"><a href="shop.html">Shop</a></li>
+         <li class="menu-"><a href="campaigns.html">Get Involved</a></li>
+         <li class="menu-"><a href="about-me.html">About Us</a></li>
 
         </ul>
 
@@ -115,30 +123,24 @@
 
       <!-- footer goes here -->
       <footer class="flex-content" id="footer-last">
-        <section class="contact-info" >
-          <p>Melkam Fashion PLC</p>
-          <p>Melkamsew Takele</p>
-          <p>Email: <a href="mailto:melkamfashion@greenfashion.com">
-          someone@example.com</a>.</p>
-        </section>
+    		<section class="contact-info">
+    			<p>Melkam Fashion PLC</p>
+    			<p>Melkamsew Takele</p>
+    			<p>Email: <a href="mailto:melkamfashion@greenfashion.com">
+    			someone@example.com</a></p>
+    		</section>
 
-          <section class="social-icons">
-            <p>Social Links</p>
-            <p>Facebook:</p>
-            <p>Twitter:</p>
-          </section>
+    			<section class="social-icons">
+    				<p>Get Social</p>
+    				<p><a href="https://wwww.facebook.com/melkamfashion">Facebook</a></p>
+    				<p><a href="https://wwww.twitter.com/melkamfashion">Twitter</a></p>
+    			</section>
 
-          <section class="Adress-map">
-            <p>Physical Adress</p>
-            <p>placeholder textarea </p>
-            <p>embed map here</p>
-
-          </section>
-      </footer>
-
+    			<section class="Adress-map">
+    				<p>Physical Adress</p>
+    				<p>Addis Ababa</p>
+    				<p>Ethiopia</p>
+    			</section>
     </body>
-
-
-
 
 </html>

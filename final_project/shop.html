@@ -6,7 +6,7 @@
         <title>Shop: Melkam Fashion</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href=".ico">
+        <link rel="shortcut icon" href="favicon.ico">
 
       <!-- bootstrap links and other external styling sheets and javascript -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -17,8 +17,6 @@
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <!-- logo -->
-        <a href="#" id="logo"></a>
 
         <!-- External link (relative) to main stylesheet -->
         <link rel="stylesheet" href="css/screen.css">
@@ -71,23 +69,33 @@
         </style>
 
       </head>
+
       <header>
 
-        <!-- Navigation Bar -->
-        <nav>
-          <ul class="menu" >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Dashboard</a>
+        <!-- Header Bar -->
+        <div class="logo">
+        <a href="#" class="logo-resp">Melkam Fashion</a>
+        <img src="images/logo.png" class="image-res" alt="">
+        <!-- the handle button for Responsive nav -->
+          <button type="button" class="handle"> <i class="fa fa-bars"></i></button>
 
-              <ul>
-                 <li><a href="registration.php" class="register">Register</a></li>
-                 <li><a href="login.php" class="sign in">Log In</a></li>
+        </div>
+
+        <!-- naviagation bar -->
+        <nav class="nav">
+          <ul class="menu" >
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="sub-nav"><a href="dashboard.html">Dashboard</a>
+
+              <ul class="">
+                 <li class="sub-nav"><a href="registration.php" class="register">Register</a></li>
+                 <li class="sub-nav"><a href="login.php" class="sign in">Log In</a></li>
               </ul>
 
             </li>
-         <li><a href="shop.html">Shop</a></li>
-         <li><a href="campaigns.html">Get Involved</a></li>
-         <li><a href="about-me.html">About Us</a></li>
+         <li class="menu-"><a href="shop.html">Shop</a></li>
+         <li class="menu-"><a href="campaigns.html">Get Involved</a></li>
+         <li class="menu-"><a href="about-me.html">About Us</a></li>
 
         </ul>
 
@@ -150,11 +158,8 @@
         </div>
         </section>
 
-
+        
       </div>
-
-
-
       <footer class="flex-content" id="footer-last">
     		<section class="contact-info">
     			<p>Melkam Fashion PLC</p>
@@ -175,7 +180,5 @@
     				<p>Ethiopia</p>
     			</section>
     	</footer>
-
-
     </body>
 </html>

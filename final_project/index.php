@@ -10,7 +10,7 @@ include("auth.php"); //include auth.php file on all secure pages
         <title>Melkam Fashion : Index</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href=".ico">
+        <link rel="shortcut icon" href="favicon.ico">
 
       <!-- bootstrap links and other external styling sheets and javascript -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -55,39 +55,37 @@ include("auth.php"); //include auth.php file on all secure pages
     </header>
 
 
-
-
-
   <body>
     <div class="form">
-      <p>Welcome <?php echo $_SESSION['username']; ?>!</p>
-      <p>This is secure area.</p>
+      <!-- echo the user name to verify -->
+      <p class="page-header">Welcome <?php echo $_SESSION['username']; ?>!</p>
+
+      <p class="h3">This is secure area.</p>
       <p><a href="dashboard.php">Dashboard</a></p>
       <a href="logout.php">Logout</a>
       <br /><br /><br /><br />
-      <p>Honors Option: User registration</p>
+      <p>This is the Honors Option</p>
     </div>
 
     <!-- footer goes here -->
-  	<footer class="flex-content" id="footer-last">
-  		<section class="contact-info">
-  			<p>Melkam Fashion PLC</p>
-  			<p>Melkamsew Takele</p>
-  			<p>Email: <a href="mailto:melkamfashion@greenfashion.com">
-  			someone@example.com</a></p>
-  		</section>
+    <footer class="flex-content" id="footer-last">
+      <section class="contact-info">
+        <p>Melkam Fashion PLC</p>
+        <p>Melkamsew Takele</p>
+        <p>Email: <a href="mailto:melkamfashion@greenfashion.com">
+        someone@example.com</a></p>
+      </section>
 
-  			<section class="social-icons">
-  				<p>Get Social</p>
-  				<p>Facebook:</p>
-  				<p>Twitter:</p>
-  			</section>
+        <section class="social-icons">
+          <p>Get Social</p>
+          <p><a href="https://wwww.facebook.com/melkamfashion">Facebook</a></p>
+          <p><a href="https://wwww.twitter.com/melkamfashion">Twitter</a></p>
+        </section>
 
-  			<section class="Adress-map">
-  				<p>Physical Adress</p>
-  				<p>placeholder textarea </p>
-  				<p>embed map here</p>
-  			</section>
-  		</footer>
-</body>
+        <section class="Adress-map">
+          <p>Physical Adress</p>
+          <p>Addis Ababa</p>
+          <p>Ethiopia</p>
+        </section>
+  </body>
 </html>

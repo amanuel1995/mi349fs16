@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Login</title>
+<title>Login: Melkam Fashion</title>
 
 <!-- inline CSS for registration system -->
 	<style>
@@ -25,27 +25,36 @@
 
 
 
-  <header>
+	<header>
 
-    <!-- Navigation Bar -->
-    <nav>
-      <ul class="menu" >
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Dashboard</a>
+		<!-- Header Bar -->
+		<div class="logo">
+		<a href="#" class="logo-resp">Melkam Fashion</a>
+		<img src="images/logo.png" class="image-res" alt="">
+		<!-- the handle button for Responsive nav -->
+			<button type="button" class="handle"> <i class="fa fa-bars"></i></button>
 
-          <ul>
-             <li><a href="registration.php" class="register">Register</a></li>
-             <li><a href="login.php" class="sign in">Log In</a></li>
-          </ul>
+		</div>
 
-        </li>
-     <li><a href="shop.html">Shop</a></li>
-     <li><a href="campaigns.html">Get Involved</a></li>
-     <li><a href="about-me.html">About Us</a></li>
+		<!-- naviagation bar -->
+		<nav class="nav">
+			<ul class="menu" >
+				<li class=""><a href="index.html">Home</a></li>
+				<li class="sub-nav"><a href="dashboard.html">Dashboard</a>
 
-    </ul>
+					<ul class="">
+						 <li class="sub-nav"><a href="registration.php" class="register">Register</a></li>
+						 <li class="sub-nav"><a href="login.php" class="sign in">Log In</a></li>
+					</ul>
 
-  </nav>
+				</li>
+		 <li class="menu-"><a href="shop.html">Shop</a></li>
+		 <li class="menu-"><a href="campaigns.html">Get Involved</a></li>
+		 <li class="menu-"><a href="about-me.html">About Us</a></li>
+
+		</ul>
+
+	</nav>
 
 </header>
 

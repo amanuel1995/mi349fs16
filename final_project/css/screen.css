@@ -164,7 +164,6 @@ ul {
 
 .image-flex img {
   height: 10%;
-
 }
 
 /*css card styling */
@@ -263,14 +262,25 @@ ul {
   color: #fff;
   float: left;
   height: 45px;
-  /*display: none;*/
 
 }
 
  /*Media query for generic tablet*/
 @media screen and (max-width: 600px) {
+  .menu li:hover > ul li {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      display: none;
+  }
+  .menu{
+    height: auto;
+  }
   nav{
     overflow: hidden;
+  }
+  .sub-nav {
+    display: none;
   }
   nav ul {
     max-height: 0px;
@@ -283,7 +293,7 @@ ul {
     padding: 0 2px;
   }
   .nav ul.show{
-    max-height: 300px; //Jquery element styling
+    max-height: 600px; //Jquery element styling
   }
 
   .logo{
@@ -342,6 +352,12 @@ ul {
 }
 
 @media screen and (max-width: 420px) {
+  .menu li:hover > ul li {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      display: none;
+  }
   .card{
     display: none;
   }
@@ -358,6 +374,7 @@ ul {
   nav{
     overflow: hidden;
   }
+
   nav ul {
     max-height: 0px;
     width: 100%;
@@ -408,6 +425,12 @@ ul {
 }
 
 @media screen and (max-width:281px) {
+  .menu li:hover > ul li {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      display: none;
+  }
   nav{
     overflow: hidden;
   }

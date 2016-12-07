@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Registration</title>
+<link rel="shortcut icon" href="favicon.ico">
 
 <!-- inline CSS for registration system -->
 	<style>
@@ -22,24 +23,35 @@
 
 	<link rel="stylesheet" href="css/screen.css">
 
+</head>
 
+<body>
 	<header>
 
-		<!-- Navigation Bar -->
-		<nav>
-			<ul class="menu" >
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Dashboard</a>
+		<!-- Header Bar -->
+		<div class="logo">
+		<a href="#" class="logo-resp">Melkam Fashion</a>
+		<img src="images/logo.png" class="image-res" alt="">
+		<!-- the handle button for Responsive nav -->
+			<button type="button" class="handle"> <i class="fa fa-bars"></i></button>
 
-					<ul>
-						 <li><a href="registration.php" class="register">Register</a></li>
-						 <li><a href="login.php" class="sign in">Log In</a></li>
+		</div>
+
+		<!-- naviagation bar -->
+		<nav class="nav">
+			<ul class="menu" >
+				<li class=""><a href="index.html">Home</a></li>
+				<li class="sub-nav"><a href="dashboard.html">Dashboard</a>
+
+					<ul class="">
+						 <li class="sub-nav"><a href="registration.php" class="register">Register</a></li>
+						 <li class="sub-nav"><a href="login.php" class="sign in">Log In</a></li>
 					</ul>
 
 				</li>
-		 <li><a href="shop.html">Shop</a></li>
-		 <li><a href="campaigns.html">Get Involved</a></li>
-		 <li><a href="about-me.html">About Us</a></li>
+		 <li class="menu-"><a href="shop.html">Shop</a></li>
+		 <li class="menu-"><a href="campaigns.html">Get Involved</a></li>
+		 <li class="menu-"><a href="about-me.html">About Us</a></li>
 
 		</ul>
 
@@ -47,9 +59,6 @@
 
 </header>
 
-</head>
-
-<body>
 <?php
 	require('db.php');
     // If form submitted, insert values into the database.
@@ -83,26 +92,25 @@
 <?php } ?>
 
 
-	<footer class="flex-content" id="footer-last">
-		<section class="contact-info">
-			<p>Melkam Fashion PLC</p>
-			<p>Melkamsew Takele</p>
-			<p>Email: <a href="mailto:melkamfashion@greenfashion.com">
-			someone@example.com</a></p>
+<!-- footer goes here -->
+<footer class="flex-content" id="footer-last">
+	<section class="contact-info">
+		<p>Melkam Fashion PLC</p>
+		<p>Melkamsew Takele</p>
+		<p>Email: <a href="mailto:melkamfashion@greenfashion.com">
+		someone@example.com</a></p>
+	</section>
+
+		<section class="social-icons">
+			<p>Get Social</p>
+			<p><a href="https://wwww.facebook.com/melkamfashion">Facebook</a></p>
+			<p><a href="https://wwww.twitter.com/melkamfashion">Twitter</a></p>
 		</section>
 
-			<section class="social-icons">
-				<p>Get Social</p>
-				<p>Facebook:</p>
-				<p>Twitter:</p>
-			</section>
-
-			<section class="Adress-map">
-				<p>Physical Adress</p>
-				<p>placeholder textarea </p>
-				<p>embed map here</p>
-			</section>
-	</footer>
-
+		<section class="Adress-map">
+			<p>Physical Adress</p>
+			<p>Addis Ababa</p>
+			<p>Ethiopia</p>
+		</section>
 </body>
 </html>
