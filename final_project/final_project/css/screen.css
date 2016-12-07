@@ -265,8 +265,37 @@ ul {
 
 }
 
- /*Media query for generic tablet*/
+ /*First breakpoint Media query for generic tablet*/
 @media screen and (max-width: 600px) {
+
+  .content {
+      display: block;
+  }
+  .content section {
+    padding: 1em;
+    line-height: 25px;
+  }
+  .content section:last-of-type {
+  }
+  .content section:first-of-type {
+  }
+
+  .center-about-me{
+    margin-top: -160px;
+
+  }
+  #melkamsew {
+    display: block;
+    margin: 0 auto;
+  }
+  .videoframe{
+    margin-top: 20px;
+    width: 530px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
   .menu li:hover > ul li {
       height: 0;
       overflow: hidden;
@@ -346,12 +375,39 @@ ul {
   }
 
 
-
-
-
 }
 
+ /*second breakpoint : small screen phones*/
 @media screen and (max-width: 420px) {
+
+  .content {
+      display: block;
+  }
+  .content section {
+    padding: 1em;
+    line-height: 25px;
+  }
+  .content section:last-of-type {
+  }
+  .content section:first-of-type {
+  }
+
+  .center-about-me{
+    margin-top: -160px;
+
+  }
+  #melkamsew {
+    display: block;
+    margin: 0 auto;
+  }
+  .videoframe{
+    margin-top: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
   .menu li:hover > ul li {
       height: 0;
       overflow: hidden;
@@ -424,7 +480,37 @@ ul {
   }
 }
 
+/*Third breakpoint for super small screen */
+
 @media screen and (max-width:281px) {
+  .content {
+      display: block;
+  }
+  .content section {
+    padding: 1em;
+    line-height: 25px;
+  }
+  .content section:last-of-type {
+  }
+  .content section:first-of-type {
+  }
+
+  .center-about-me{
+    margin-top: -160px;
+
+  }
+  #melkamsew {
+    display: block;
+    margin: 0 auto;
+  }
+  .videoframe{
+    margin-top: 20px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
   .menu li:hover > ul li {
       height: 0;
       overflow: hidden;

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Registration</title>
 <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
 <!-- inline CSS for registration system -->
 	<style>

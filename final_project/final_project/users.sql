@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 07, 2016 at 01:47 AM
+-- Generation Time: Dec 07, 2016 at 06:34 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.5.38
 
@@ -41,7 +41,9 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `trn_date`) VALUES
 (3, 'someone', 'ama@msa.edu', '7c9b6b461e88ca6bbec624affb7634a1', '2016-12-05 22:26:41'),
 (4, 'amanuel1995', 'amaniye1@live.com', '115cb53deea1f407b6a4d3513fc492b0', '2016-12-06 01:58:50'),
-(5, 'amanuel1999', 'amana@mmmmm.com', '95a6080a7a999364880885c180d92bb5', '2016-12-07 01:25:28');
+(5, 'amanuel1999', 'amana@mmmmm.com', '95a6080a7a999364880885c180d92bb5', '2016-12-07 01:25:28'),
+(6, 'testuser', 'test@test.com', 'ccda1683d8c97f8f2dff2ea7d649b42c', '2016-12-07 01:49:59'),
+(7, 'test', 'test@test.com', '098f6bcd4621d373cade4e832627b4f6', '2016-12-07 01:50:36');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +63,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
